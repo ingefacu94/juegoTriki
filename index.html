@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Triki</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Triki</h1>
+        <div class="player-inputs">
+            <input type="text" id="player1" placeholder="Nombre del Jugador 1 (X)">
+            <input type="text" id="player2" placeholder="Nombre del Jugador 2 (O)">
+            Jugar contra la IA:<input type="checkbox" name="juego-maquina" id="juego-maquina">
+            <button id="start-game-btn">Iniciar Juego</button>
+        </div>
+        <div class="game" style="display: none;">
+            <div class="game">
+            <div class="marcadores">
+                <div class="marcador">
+                    <div class="simbolo" id="simbolo-x">X</div>
+                    <div class="nombre-jugador" id="nombre-jugador-1">Jugador 1</div>
+                    <div class="puntaje" id="puntaje-jugador-1">0</div>
+                </div>
+
+                <div class="marcador">
+                    <div class="simbolo" id="simbolo-o">O</div>
+                    <div class="nombre-jugador" id="nombre-jugador-2">Jugador 2</div>
+                    <div class="puntaje" id="puntaje-jugador-2">0</div>
+                </div>
+
+                <div class="marcador">
+                    <div class="simbolo">-</div>
+                    <div class="nombre-jugador" id="nombre-jugador-empate">Empates</div>
+                    <div class="puntaje" id="puntaje-empate">0</div>
+                </div>
+            </div>
+            <div id="tablero-juego">
+                <div class="board">
+                    <div class="cell" data-cell></div>
+                    <div class="cell" data-cell></div>
+                    <div class="cell" data-cell></div>
+                    <div class="cell" data-cell></div>
+                    <div class="cell" data-cell></div>
+                    <div class="cell" data-cell></div>
+                    <div class="cell" data-cell></div>
+                    <div class="cell" data-cell></div>
+                    <div class="cell" data-cell></div>    
+                </div>
+            </div>
+            <button class="restart-btn" id="restart-btn">Reiniciar juego</button>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>

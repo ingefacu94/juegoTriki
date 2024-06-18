@@ -1,0 +1,170 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+}
+
+.player-inputs {
+    margin-bottom: 20px;
+}
+
+input {
+    padding: 10px;
+    margin: 10px;
+    font-size: 1em;
+    border: 2px solid #333;
+    border-radius: 5px;
+}
+
+#start-game-btn {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #4670e2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#start-game-btn:hover {
+    background-color: #093492;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+    margin-bottom: 20px;
+}
+#tablero-juego{
+  margin-left: 30%;
+  margin-top: 5%;
+    
+}
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    border: 2px solid #887f7f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.cell:hover {
+    background-color: #f2f2f2;
+    border: 2px solid #504d4d;
+}
+
+.restart-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #4670e2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.restart-btn:hover {
+    background-color: #093492;
+}
+
+.marcadores {
+    display: flex;
+    gap: 20px;
+}
+.marcador{
+    display: flex;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.puntaje{
+    background: #093492;
+    color: white;
+    width: 80px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.nombre-jugador{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    font-size: 24px;
+    background: #ffffff;
+    border-right: 1px solid #dddddd;
+    
+}
+
+.nombre-jugador:last-child {
+    border-right: none;
+}
+
+.simbolo{
+    background: #fff;
+    
+    font-weight: bold;
+    width: 80px;
+    text-align: center;
+    font-size: 50px;
+}
+
+#simbolo-x{
+    color: #f44336;
+}
+
+#simbolo-o{
+    color: #1cdd3c;
+}
+
+.marcadas-ganadoras {
+    background-color: #ffeb3b;
+    animation: highlightAnimation 1s infinite alternate, borderGlow 1s infinite alternate;
+    position: relative;
+    z-index: 1;
+}
+
+@keyframes highlightAnimation {
+    0% {
+        background-color: #ffeb3b;
+    }
+    100% {
+        background-color: #fff176;
+    }
+}
+
+@keyframes borderGlow {
+    0% {
+        box-shadow: 0 0 5px #ffeb3b, 0 0 15px #ffeb3b, 0 0 30px #ffeb3b, 0 0 50px #ffeb3b;
+    }
+    100% {
+        box-shadow: 0 0 5px #fff176, 0 0 15px #fff176, 0 0 30px #fff176, 0 0 50px #fff176;
+    }
+}
+
+    
+    
